@@ -6,18 +6,17 @@ var interval = setInterval(function () {
     if (count === 0) {
         clearInterval(interval);
         document.getElementById('count').innerHTML = 'Done';
-        // or...
         alert("You're out of time!");
     }
 }, 1000);
 
-// var containerquestions="";
-// document.getElementById("containerquestions").onclick = function() { 
+ //var containerquestions="";
+   // document.getElementById("containerquestions").onclick = function() { 
+   // document.getElementById("containerquestions").style.display = "none"; 
+   // document.getElementById("Question").innerHTML="";
+ //} 
 
-// document.getElementById("containerquestions").style.display = "none"; 
-
-// } 
-
+ 
 
 
 
@@ -68,9 +67,9 @@ document.querySelector(".btnOption4").innerHTML = question3.optD;
 
 
 document.querySelector(".btnOption1").onclick = function () {
-    alert("Correct!")
+    //alert("Correct!")
     if (document.querySelector("#Question").innerHTML == question1.title) {
-
+        alert("Correct!")
         document.querySelector("#Question").innerHTML = question2.title
     }
     else if (document.querySelector("#Question").innerHTML == question2.title) {
